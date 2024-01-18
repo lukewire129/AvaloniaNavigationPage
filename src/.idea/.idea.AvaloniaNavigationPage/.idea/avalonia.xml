@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="AvaloniaNavigationPage/AvaloniaNavigationPage/App.axaml" value="AvaloniaNavigationPage/AvaloniaNavigationPage.Browser/AvaloniaNavigationPage.Browser.csproj" />
+        <entry key="AvaloniaNavigationPage/AvaloniaNavigationPage/Themes/MagicBar.axaml" value="AvaloniaNavigationPage/AvaloniaNavigationPage.Desktop/AvaloniaNavigationPage.Desktop.csproj" />
+        <entry key="AvaloniaNavigationPage/AvaloniaNavigationPage/Themes/NavigationView.axaml" value="AvaloniaNavigationPage/AvaloniaNavigationPage.Desktop/AvaloniaNavigationPage.Desktop.csproj" />
+        <entry key="AvaloniaNavigationPage/AvaloniaNavigationPage/Themes/TappageView.axaml" value="AvaloniaNavigationPage/AvaloniaNavigationPage.Desktop/AvaloniaNavigationPage.Desktop.csproj" />
+        <entry key="AvaloniaNavigationPage/AvaloniaNavigationPage/Views/AContent.axaml" value="AvaloniaNavigationPage/AvaloniaNavigationPage.Browser/AvaloniaNavigationPage.Browser.csproj" />
+        <entry key="AvaloniaNavigationPage/AvaloniaNavigationPage/Views/BContent.axaml" value="AvaloniaNavigationPage/AvaloniaNavigationPage.Browser/AvaloniaNavigationPage.Browser.csproj" />
+        <entry key="AvaloniaNavigationPage/AvaloniaNavigationPage/Views/CContent.axaml" value="AvaloniaNavigationPage/AvaloniaNavigationPage.Browser/AvaloniaNavigationPage.Browser.csproj" />
+        <entry key="AvaloniaNavigationPage/AvaloniaNavigationPage/Views/DContent.axaml" value="AvaloniaNavigationPage/AvaloniaNavigationPage.Browser/AvaloniaNavigationPage.Browser.csproj" />
+        <entry key="AvaloniaNavigationPage/AvaloniaNavigationPage/Views/EContent.axaml" value="AvaloniaNavigationPage/AvaloniaNavigationPage.Browser/AvaloniaNavigationPage.Browser.csproj" />
+        <entry key="AvaloniaNavigationPage/AvaloniaNavigationPage/Views/MainView.axaml" value="AvaloniaNavigationPage/AvaloniaNavigationPage.Desktop/AvaloniaNavigationPage.Desktop.csproj" />
+        <entry key="AvaloniaNavigationPage/AvaloniaNavigationPage/Views/MainWindow.axaml" value="AvaloniaNavigationPage/AvaloniaNavigationPage.Browser/AvaloniaNavigationPage.Browser.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
