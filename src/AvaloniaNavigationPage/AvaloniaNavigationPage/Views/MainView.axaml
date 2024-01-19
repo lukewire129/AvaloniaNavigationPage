@@ -6,9 +6,9 @@
              xmlns:themes="clr-namespace:AvaloniaNavigationPage.Themes"
              xmlns:views="clr-namespace:AvaloniaNavigationPage.Views"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="AvaloniaNavigationPage.Views.MainView"
+             x:Class="AvaloniaNavigationPage.Views.MainView" Background="White"
              x:DataType="vm:MainViewModel">
-    <themes:NavigationView Background="#222222">
+    <themes:NavigationView Background="White">
         <themes:NavigationView.PageItems>
             <views:AContent/>
             <views:BContent/>

@@ -1,6 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading;
 using Avalonia;
+using Avalonia.Animation;
+using Avalonia.Animation.Easings;
 using Avalonia.Controls;
+using Avalonia.Styling;
 
 namespace AvaloniaNavigationPage.Themes;
 
@@ -38,14 +43,23 @@ public partial class NavigationView : UserControl
 
             ((INavigationAdapter)NavigtorContent).ChangedSelectedIndex += (i =>
             {
-                if (currentIndx < i)
+                if (i < 0) return;
+                if (PART_Content == null) return;
+
+                if (this.PART_Content.Content == null)
                 {
-                    
+                    this.PART_Content.Content = PageItems[i];
+                    currentIndx = i;
+                    return;
                 }
-                else
+
+                var pageSlide = new PageSlide(new TimeSpan(0, 0, 0, 0, 300));
+                bool isForwad = true;
+                if (currentIndx > i)
                 {
-                    
+                    isForwad = false;
                 }
+                pageSlide.Start((Visual)this.PART_Content.Content, (Visual)PageItems[i],isForwad, new CancellationToken());
                 this.PART_Content.Content = PageItems[i];
                 currentIndx = i;
             });

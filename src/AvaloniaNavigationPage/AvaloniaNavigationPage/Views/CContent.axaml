@@ -4,5 +4,5 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="AvaloniaNavigationPage.Views.CContent">
-    <TextBlock Text="CContent" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+    <TextBlock Text="Google" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 </UserControl>
