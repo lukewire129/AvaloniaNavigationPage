@@ -83,7 +83,7 @@
     <Style Selector="controls|MagicBar">
         <Setter Property="ItemContainerTheme" Value="{StaticResource MagicBarItem}"/>
         <Setter Property="UseLayoutRounding" Value="True"/>
-        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Background" Value="White"/>
         <Setter Property="Width" Value="440"/>
         <Setter Property="Height" Value="120"/>
         <Setter Property="Template">
@@ -93,7 +93,7 @@
                     <Canvas Margin="20 0 20 0">
                         <Grid x:Name="PART_Circle">
                             <Path x:Name="PART_Arc"/>
-                            <Ellipse Fill="#222222"/>
+                            <Ellipse Fill="White"/>
                             <Ellipse Fill="CadetBlue" Margin="6"/>
                         </Grid>
                     </Canvas>
@@ -106,7 +106,7 @@
             <Setter Property="Data" Value="{StaticResource ArcData}" />
             <Setter Property="Width" Value="100"/>
             <Setter Property="Height" Value="100"/>
-            <Setter Property="Fill" Value="#222222"/>
+            <Setter Property="Fill" Value="White"/>
             <Setter Property="Margin" Value="-10 90 -10 -1"/>
         </Style>
         <Style Selector="^ /template/ Grid#PART_Circle">
