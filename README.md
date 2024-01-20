@@ -1,6 +1,6 @@
 # AvaloniaUI Enhanced BottomNavigationBar with Page Navigation
 ### Introduction
-This project is an extended version of the BottomNavigationBar implemented using AvaloniaUI. In this version, we have added page navigation capabilities to the existing bottom navigation bar, allowing users to navigate through the application more efficiently.
+This project is an extended version of the [BottomNavigationBar](https://github.com/lukewire129/AvaloniaNavigationBar) implemented using AvaloniaUI. In this version, we have added page navigation capabilities to the existing bottom navigation bar, allowing users to navigate through the application more efficiently.
 
 ### Key Features
 - **Page Navigation Capabilities**: Seamlessly transition to associated pages when a user selects an item from the bottom navigation bar.
