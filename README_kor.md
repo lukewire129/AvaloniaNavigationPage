@@ -1,6 +1,6 @@
 # AvaloniaUI Enhanced BottomNavigationBar with Page Navigation
 ### Introduction
-이 프로젝트는 AvaloniaUI를 사용하여 구현된 BottomNavigationBar의 확장 버전입니다. 본 버전에서는 기존의 하단 내비게이션 바 기능에 페이지 전환 기능을 추가하여, 사용자들이 더욱 효율적으로 애플리케이션 내에서 내비게이션 할 수 있도록 합니다.
+이 프로젝트는 AvaloniaUI를 사용하여 구현된 [BottomNavigationBar](https://github.com/lukewire129/AvaloniaNavigationBar)의 확장 버전입니다. 본 버전에서는 기존의 하단 내비게이션 바 기능에 페이지 전환 기능을 추가하여, 사용자들이 더욱 효율적으로 애플리케이션 내에서 내비게이션 할 수 있도록 합니다.
 
 ### Key Features
 - **페이지 전환 기능**: 사용자가 하단 내비게이션 바의 항목을 선택할 때, 연관된 페이지로 자연스럽게 전환됩니다.
