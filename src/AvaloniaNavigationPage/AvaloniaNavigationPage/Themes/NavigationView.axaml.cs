@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using Avalonia;
 using Avalonia.Animation;
-using Avalonia.Animation.Easings;
 using Avalonia.Controls;
-using Avalonia.Styling;
 
 namespace AvaloniaNavigationPage.Themes;
 
