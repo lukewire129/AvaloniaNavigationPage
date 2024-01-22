@@ -18,6 +18,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewLocator", "ViewLocator", "{8B55837D-3221-4DBC-9041-CF92B27B345C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationPage", "NavigationPage\NavigationPage\NavigationPage.csproj", "{A90C4AF6-BF6A-4B6F-AFF3-4806CF1010B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationPage.Android", "NavigationPage\NavigationPage.Android\NavigationPage.Android.csproj", "{16090109-2F98-425E-8ACE-AAE2BB42732D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationPage.Desktop", "NavigationPage\NavigationPage.Desktop\NavigationPage.Desktop.csproj", "{B5DA50C9-FCD4-4D0F-8B23-C40DA882939B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationPage.iOS", "NavigationPage\NavigationPage.iOS\NavigationPage.iOS.csproj", "{669840B5-E26C-46AE-982B-D71DBE94A690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationPage.Browser", "NavigationPage\NavigationPage.Browser\NavigationPage.Browser.csproj", "{E3CA5148-D0F6-45E0-A0F0-224A5ABA5638}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,11 +56,38 @@ Global
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AD1DAC8-7FBE-49D5-8614-7321233DB82E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A90C4AF6-BF6A-4B6F-AFF3-4806CF1010B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A90C4AF6-BF6A-4B6F-AFF3-4806CF1010B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A90C4AF6-BF6A-4B6F-AFF3-4806CF1010B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A90C4AF6-BF6A-4B6F-AFF3-4806CF1010B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16090109-2F98-425E-8ACE-AAE2BB42732D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16090109-2F98-425E-8ACE-AAE2BB42732D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16090109-2F98-425E-8ACE-AAE2BB42732D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16090109-2F98-425E-8ACE-AAE2BB42732D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5DA50C9-FCD4-4D0F-8B23-C40DA882939B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5DA50C9-FCD4-4D0F-8B23-C40DA882939B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5DA50C9-FCD4-4D0F-8B23-C40DA882939B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5DA50C9-FCD4-4D0F-8B23-C40DA882939B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669840B5-E26C-46AE-982B-D71DBE94A690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669840B5-E26C-46AE-982B-D71DBE94A690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669840B5-E26C-46AE-982B-D71DBE94A690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669840B5-E26C-46AE-982B-D71DBE94A690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3CA5148-D0F6-45E0-A0F0-224A5ABA5638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3CA5148-D0F6-45E0-A0F0-224A5ABA5638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3CA5148-D0F6-45E0-A0F0-224A5ABA5638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3CA5148-D0F6-45E0-A0F0-224A5ABA5638}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83CB65B8-011F-4ED7-BCD3-A6CFA935EF7E}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A90C4AF6-BF6A-4B6F-AFF3-4806CF1010B6} = {8B55837D-3221-4DBC-9041-CF92B27B345C}
+		{16090109-2F98-425E-8ACE-AAE2BB42732D} = {8B55837D-3221-4DBC-9041-CF92B27B345C}
+		{B5DA50C9-FCD4-4D0F-8B23-C40DA882939B} = {8B55837D-3221-4DBC-9041-CF92B27B345C}
+		{669840B5-E26C-46AE-982B-D71DBE94A690} = {8B55837D-3221-4DBC-9041-CF92B27B345C}
+		{E3CA5148-D0F6-45E0-A0F0-224A5ABA5638} = {8B55837D-3221-4DBC-9041-CF92B27B345C}
 	EndGlobalSection
 EndGlobal
