@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Assets\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="11.0.7" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.7" />
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.7" />
+        <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.7" />
+        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.7" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\AContentView.axaml.cs">
+        <DependentUpon>AContent.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\BContentView.axaml.cs">
+        <DependentUpon>BContent.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\CContentView.axaml.cs">
+        <DependentUpon>CContent.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\DContentView.axaml.cs">
+        <DependentUpon>DContent.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+      <Compile Update="Views\EContentView.axaml.cs">
+        <DependentUpon>EContent.axaml</DependentUpon>
+        <SubType>Code</SubType>
+      </Compile>
+    </ItemGroup>
+</Project>
