@@ -46,6 +46,7 @@ public partial class NavigationView : UserControl
                
                 var nextItem = ((MagicBar)this.PART_Navigator.Content).Items[i];
                 var ctrl = new ViewLocator().Build(nextItem);
+                ctrl.DataContext =  ((MagicBar)this.PART_Navigator.Content).Items[i];
                 if (this.PART_Content.Content == null)
                 {
                     this.PART_Content.Content = ctrl;
