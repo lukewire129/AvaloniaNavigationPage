@@ -1,0 +1,8 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="NavigationPage.Themes.NavigationView">
+    <Grid RowDefinitions="*, auto">
+        <ContentControl x:Name="PART_Content"  Background="White"/>
+        <ContentControl Grid.Row="1" x:Name="PART_Navigator" Background="White"/>
+    </Grid>
+</UserControl>

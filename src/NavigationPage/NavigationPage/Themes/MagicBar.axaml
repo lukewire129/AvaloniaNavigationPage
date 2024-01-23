@@ -1,0 +1,122 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:NavigationPage.Themes"
+        xmlns:viewModels="clr-namespace:NavigationPage.ViewModels">
+    <Styles.Resources>
+        <Geometry x:Key="ArcData">
+            M0,0 L100,0 C95.167503,0 91.135628,3.4278221 90.203163,7.9846497 L90.152122,8.2704506 89.963921,9.1416779 C85.813438,27.384438 69.496498,41 50,41 30.5035,41 14.186564,27.384438 10.036079,9.1416779 L9.8478823,8.2704926 9.7968359,7.9846497 C8.8643732,3.4278221 4.8324914,0,0,0 z
+        </Geometry>
+        <ControlTheme TargetType="{x:Type ListBoxItem}" x:Key="MagicBarItem" >
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Template">
+                <ControlTemplate>
+                    <Grid Background="{TemplateBinding Background}" Margin="0,40,0,0"
+                          x:DataType="viewModels:NavigationViewModelBase">
+                        <Viewbox Width="60" x:Name="PART_IconArea">
+                            <Path x:Name="PART_Icon" Data="{Binding PathData}"/>
+                        </Viewbox>
+                        <TextBlock x:Name="PART_Name" Text="{Binding Content}"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter>
+            <Style Selector="^ /template/ Viewbox#PART_IconArea">
+                <Setter Property="Margin" Value="25,0,0,0"></Setter>
+                <Setter Property="Transitions">
+                    <Transitions>
+                        <ThicknessTransition Property="Margin" Duration="0:0:0.5"/>
+                    </Transitions>
+                </Setter>
+            </Style>
+            <Style Selector="^ /template/  Path#PART_Icon">
+                <Setter Property="Width" Value="40"/>
+                <Setter Property="Height" Value="40"/>
+                <Setter Property="Fill" Value="#44333333"></Setter>
+                <Setter Property="Transitions">
+                    <Transitions>
+                        <BrushTransition Property="Fill" Duration="0:0:0.5"/>
+                    </Transitions>
+                </Setter>
+            </Style>
+            <Style  Selector="^ /template/  TextBlock#PART_Name">
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="Foreground" Value="#00000000"/>
+                <Setter Property="Margin" Value="5 60 0 0"/>
+                <Setter Property="Transitions">
+                    <Transitions>
+                        <ThicknessTransition Property="Margin" Duration="0:0:0.5"/>
+                        <BrushTransition Property="Foreground" Duration="0:0:0.5"/>
+                    </Transitions>
+                </Setter>
+            </Style>
+            <Style Selector="^:selected">
+                <Style Selector="^ /template/  Path#PART_Icon">
+                    <Setter Property="Fill" Value="#333333"></Setter>
+                </Style>
+                <Style Selector="^ /template/  Viewbox#PART_IconArea">
+                    <Setter Property="Margin" Value="25,-50,0,0"/>
+                </Style>
+                <Style Selector="^ /template/  TextBlock#PART_Name">
+                    <Setter Property="Margin" Value="5,45,0,0"/>
+                    <Setter Property="Foreground" Value="#333333"></Setter>
+                </Style>
+            </Style>
+        </ControlTheme>
+    </Styles.Resources>
+    <Design.PreviewWith>
+        <controls:MagicBar>
+            <ListBoxItem Content="Microsoft" Tag="{StaticResource Microsoft}"/>
+            <ListBoxItem Content="Apple" Tag="{StaticResource Apple}"/>
+            <ListBoxItem Content="Google" Tag="{StaticResource Google}"/>
+            <ListBoxItem Content="Facebook" Tag="{StaticResource Facebook}"/>
+            <ListBoxItem Content="Instagram" Tag="{StaticResource Instagram}"/>
+        </controls:MagicBar>
+    </Design.PreviewWith>
+
+    <Style Selector="controls|MagicBar">
+        <Setter Property="ItemContainerTheme" Value="{StaticResource MagicBarItem}"/>
+        <Setter Property="UseLayoutRounding" Value="True"/>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="Width" Value="440"/>
+        <Setter Property="Height" Value="120"/>
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Grid Background="{TemplateBinding Background}" HorizontalAlignment="Center">
+                    <Border x:Name="PART_Bar" />
+                    <Canvas Margin="20 0 20 0">
+                        <Grid x:Name="PART_Circle">
+                            <Path x:Name="PART_Arc"/>
+                            <Ellipse Fill="White"/>
+                            <Ellipse Fill="CadetBlue" Margin="6"/>
+                        </Grid>
+                    </Canvas>
+                    <ItemsPresenter Margin="20 0 20 0"  ItemsPanel="{TemplateBinding ItemsPanel}"/>
+                </Grid>
+            </ControlTemplate>
+        </Setter>
+            
+        <Style Selector="^ /template/ Path#PART_Arc">
+            <Setter Property="Data" Value="{StaticResource ArcData}" />
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="100"/>
+            <Setter Property="Fill" Value="White"/>
+            <Setter Property="Margin" Value="-10 90 -10 -1"/>
+        </Style>
+        <Style Selector="^ /template/ Grid#PART_Circle">
+            <Setter Property="Width" Value="80"/>
+            <Setter Property="Height" Value="80"/>
+            <Setter Property="Canvas.Left" Value="0"/>
+            <Setter Property="Transitions">
+                <Transitions>
+                    <DoubleTransition Property="Canvas.Left" Duration="0:0:0.5"></DoubleTransition>
+                </Transitions>
+            </Setter>
+        </Style>
+        <Style Selector="^ /template/ Border#PART_Bar">
+            <Setter Property="Background" Value="#DDDDDD"/>
+            <Setter Property="Margin" Value="0 40 0 0"/>
+            <Setter Property="CornerRadius" Value="10"/>
+        </Style>
+    </Style>
+</Styles>
