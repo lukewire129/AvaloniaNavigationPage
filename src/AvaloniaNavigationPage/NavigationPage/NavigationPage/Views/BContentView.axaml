@@ -3,6 +3,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="NavigationPage.Views.BContentView">
-    <TextBlock Text="Apple" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+             x:Class="NavigationPage.Views.BContentView" 
+             xmlns:vm="clr-namespace:NavigationPage.ViewModels"
+             x:DataType="vm:BContentViewModel">
+    <TextBlock Text="{Binding Content }" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 </UserControl>
