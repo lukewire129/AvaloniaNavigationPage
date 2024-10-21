@@ -19,7 +19,10 @@ The styling of pages and the navigation bar can be customized using AvaloniaUIâ€
 - AvaloniaUI version 11.x.x or higher
 - .NET Core 3.1 or higher
 #### Installation and Execution
-(Provide the same installation and execution method as before)
+1. Clone this repository & submodule
+ ```
+git clone --recurse-submodules https://github.com/lukewire129/AvaloniaNavigationPage.git
+ ```
 
 ### Contribution
 Contributions to this project are welcome. You can contribute in various ways, including enhancing page navigation features, design improvements, and performance optimization.
