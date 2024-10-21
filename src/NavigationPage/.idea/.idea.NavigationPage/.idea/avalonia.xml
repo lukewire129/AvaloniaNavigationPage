@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="../libs/repo/navigationbar/src/AvaloniaNavigationBar/Style/MagicBar.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="NavigationPage/App.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="NavigationPage/Themes/MagicBar.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="NavigationPage/Themes/NavigationView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="NavigationPage/Views/AContentView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="NavigationPage/Views/MainView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="NavigationPage/Views/MainWindow.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
