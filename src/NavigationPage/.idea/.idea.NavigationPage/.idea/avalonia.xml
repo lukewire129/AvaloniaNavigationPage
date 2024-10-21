@@ -4,10 +4,20 @@
     <option name="projectPerEditor">
       <map>
         <entry key="../libs/repo/navigationbar/src/AvaloniaNavigationBar/Style/MagicBar.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="AvaloniaNavigationView/NavigationView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="DemoApp/Views/AContentView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="DemoApp/Views/BContentView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="DemoApp/Views/CContentView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="DemoApp/Views/MainView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="DemoApp/Views/MainWindow.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
         <entry key="NavigationPage/App.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
         <entry key="NavigationPage/Themes/MagicBar.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
         <entry key="NavigationPage/Themes/NavigationView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
         <entry key="NavigationPage/Views/AContentView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="NavigationPage/Views/BContentView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="NavigationPage/Views/CContentView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="NavigationPage/Views/DContentView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="NavigationPage/Views/EContentView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
         <entry key="NavigationPage/Views/MainView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
         <entry key="NavigationPage/Views/MainWindow.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
       </map>
