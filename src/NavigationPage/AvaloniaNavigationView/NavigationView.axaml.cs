@@ -53,7 +53,7 @@ public partial class NavigationView : UserControl
     private void ChangeContent(int index)
     {
         var naviVVM = (INavigationViewModel)this.DataContext;
-        var naviTap = (ViewModelBase)naviVVM.NaviTapVM[index];
+        var naviTap = (NavigationViewModel)naviVVM.NaviTapVM[index];
         
         PageItems[index].DataContext = naviTap;
         if (this.PART_Content.Content == null)
