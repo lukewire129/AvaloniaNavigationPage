@@ -1,16 +1,30 @@
-<UserControl xmlns="https://github.com/avaloniaui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="clr-namespace:NavigationPage.ViewModels"
-             xmlns:themes="clr-namespace:NavigationPage.Themes"
-             xmlns:views="clr-namespace:NavigationPage.Views"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="NavigationPage.Views.MainView"
-             x:DataType="vm:MainViewModel">
+<UserControl
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d"
+    x:Class="NavigationPage.Views.MainView"
+    x:DataType="vm:MainViewModel"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:style="clr-namespace:AvaloniaNavigationBar.Style;assembly=AvaloniaNavigationBar"
+    xmlns:themes="clr-namespace:NavigationPage.Themes"
+    xmlns:views="clr-namespace:NavigationPage.Views"
+    xmlns:vm="clr-namespace:NavigationPage.ViewModels"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <UserControl.Styles>
+        <StyleInclude Source="avares://AvaloniaNavigationBar/Style/MagicBar.axaml" />
+    </UserControl.Styles>
     <themes:NavigationView Background="White">
+        <themes:NavigationView.PageItems>
+            <views:AContentView />
+            <views:BContentView />
+            <views:CContentView />
+            <views:DContentView />
+            <views:EContentView />
+        </themes:NavigationView.PageItems>
         <themes:NavigationView.NavigtorContent>
-            <themes:MagicBar ItemsSource="{Binding ContentVM}"/>
+            <style:MagicBar ItemsSource="{Binding ContentVM}" />
         </themes:NavigationView.NavigtorContent>
     </themes:NavigationView>
 </UserControl>

@@ -4,6 +4,7 @@ using System.Threading;
 using Avalonia;
 using Avalonia.Animation;
 using Avalonia.Controls;
+using AvaloniaNavigationBar.Style;
 
 namespace NavigationPage.Themes;
 
