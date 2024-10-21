@@ -1,11 +1,12 @@
 ﻿<UserControl
+    Background="#222222"
     x:Class="AvaloniaNavigationView.NavigationView"
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Grid RowDefinitions="*, auto">
-        <ContentControl Background="White" x:Name="PART_Content" />
+    <Grid Background="#222222" RowDefinitions="*, auto">
+        <ContentControl Background="Transparent" x:Name="PART_Content" />
         <ContentControl
-            Background="White"
+            Background="Transparent"
             Grid.Row="1"
             x:Name="PART_Navigator" />
     </Grid>
