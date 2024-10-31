@@ -6,14 +6,6 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-
-    <ItemGroup>
-      <Compile Update="NavigationView.axaml.cs">
-        <DependentUpon>NavigationView.axaml</DependentUpon>
-        <SubType>Code</SubType>
-      </Compile>
-    </ItemGroup>
-
     <ItemGroup>
       <PackageReference Include="Avalonia" Version="11.1.4" />
       <PackageReference Include="ReactiveUI" Version="20.1.63" />

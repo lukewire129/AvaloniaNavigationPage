@@ -12,6 +12,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <UserControl.Styles>
         <StyleInclude Source="avares://AvaloniaNavigationBar/Style/MagicBar.axaml" />
+        <StyleInclude Source="avares://AvaloniaNavigationView/NavigationView.axaml" />
     </UserControl.Styles>
     <avaloniaNavigationView:NavigationView Background="White" x:Name="naviView">
         <avaloniaNavigationView:NavigationView.PageItems>

@@ -1,8 +1,8 @@
-using AvaloniaNavigationView.ViewModels;
+using AvaloniaNavigationView.ViewModel;
 
 namespace DemoApp.ViewModels;
 
-public class EContentViewModel : ViewModelBase
+public class EContentViewModel : NavigationViewModel
 {
     public string Title { get; } = "Instagram";
     public EContentViewModel()

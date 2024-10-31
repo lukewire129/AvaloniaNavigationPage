@@ -1,13 +1,18 @@
-﻿<UserControl
-    Background="#222222"
-    x:Class="AvaloniaNavigationView.NavigationView"
+﻿<Styles
     xmlns="https://github.com/avaloniaui"
+    xmlns:controls="clr-namespace:AvaloniaNavigationView"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Grid Background="#222222" RowDefinitions="*, auto">
-        <ContentControl Background="Transparent" x:Name="PART_Content" />
-        <ContentControl
-            Background="Transparent"
-            Grid.Row="1"
-            x:Name="PART_Navigator" />
-    </Grid>
-</UserControl>
+    <Design.PreviewWith>
+        <controls:NavigationView />
+    </Design.PreviewWith>
+    <Style Selector="controls|NavigationView">
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Grid RowDefinitions="*, auto">
+                    <ContentControl Background="Transparent" x:Name="PART_Content" />
+                    <ContentControl Grid.Row="1" x:Name="PART_Navigator" />
+                </Grid>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+</Styles>

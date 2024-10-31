@@ -3,13 +3,17 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
-        <entry key="../libs/repo/navigationbar/src/AvaloniaNavigationBar/Style/MagicBar.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
-        <entry key="AvaloniaNavigationView/NavigationView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
+        <entry key="../libs/repo/navigationbar/src/AvaloniaNavigationBar/Style/MagicBar.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="AvaloniaNavigationView/NavigationViee.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="AvaloniaNavigationView/NavigationView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
         <entry key="DemoApp/Views/AContentView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
         <entry key="DemoApp/Views/BContentView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
         <entry key="DemoApp/Views/CContentView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
-        <entry key="DemoApp/Views/MainView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
-        <entry key="DemoApp/Views/MainWindow.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="DemoApp/Views/DContentView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="DemoApp/Views/EContentView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="DemoApp/Views/MainView.axaml" value="DemoApp.Desktop/DemoApp.Desktop.csproj" />
+        <entry key="DemoApp/Views/MainView1.axaml" value="DemoApp.Desktop/DemoApp.Desktop.csproj" />
+        <entry key="DemoApp/Views/MainWindow.axaml" value="DemoApp.Desktop/DemoApp.Desktop.csproj" />
         <entry key="NavigationPage/App.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
         <entry key="NavigationPage/Themes/MagicBar.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />
         <entry key="NavigationPage/Themes/NavigationView.axaml" value="NavigationPage.Browser/NavigationPage.Browser.csproj" />

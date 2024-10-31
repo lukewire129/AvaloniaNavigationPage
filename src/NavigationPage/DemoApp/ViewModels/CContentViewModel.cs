@@ -1,8 +1,8 @@
-using AvaloniaNavigationView.ViewModels;
+using AvaloniaNavigationView.ViewModel;
 
 namespace DemoApp.ViewModels;
 
-public class CContentViewModel : ViewModelBase
+public class CContentViewModel : NavigationViewModel
 {   
     public string Title { get; } = "Google";
     public CContentViewModel()

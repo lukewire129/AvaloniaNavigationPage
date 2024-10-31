@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using AvaloniaNavigationBar;
-using AvaloniaNavigationView.ViewModels;
-using DemoApp.ViewModels;
+using AvaloniaNavigationView;
+using AvaloniaNavigationView.ViewModel;
 
 namespace DemoApp.ViewModels;
 
@@ -12,7 +11,7 @@ public class MainViewModel : ViewModelBase,INavigationViewModel
 #pragma warning restore CA1822 // Mark members as static
     public MainViewModel()
     {
-        NaviTapVM = new List<ViewModelBase>()
+        NaviTapVM = new List<NavigationViewModel>()
         {
             new AContentViewModel(),
             new BContentViewModel(),
@@ -22,5 +21,5 @@ public class MainViewModel : ViewModelBase,INavigationViewModel
         };
     }
 
-    public List<ViewModelBase> NaviTapVM { get; set; }
+    public List<NavigationViewModel> NaviTapVM { get; set; }
 }

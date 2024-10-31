@@ -1,8 +1,8 @@
-using AvaloniaNavigationView.ViewModels;
+using AvaloniaNavigationView.ViewModel;
 
 namespace DemoApp.ViewModels;
 
-public class BContentViewModel : ViewModelBase
+public class BContentViewModel : NavigationViewModel
 {    
     public string Title { get; } = "Apple";
     public BContentViewModel()

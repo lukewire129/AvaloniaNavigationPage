@@ -1,13 +1,13 @@
 ﻿using Avalonia;
 using Avalonia.Animation;
 using Avalonia.Controls;
-using AvaloniaNavigationBar;
+using Avalonia.Controls.Primitives;
 using AvaloniaNavigationBar.Interface;
-using AvaloniaNavigationView.ViewModels;
+using AvaloniaNavigationView.ViewModel;
 
 namespace AvaloniaNavigationView;
 
-public partial class NavigationView : UserControl
+public class NavigationView : TemplatedControl
 {
     public static readonly DirectProperty<ListBox, ListBox> NavigtorContentProperty =
         AvaloniaProperty.RegisterDirect<ListBox, ListBox>(
@@ -16,39 +16,16 @@ public partial class NavigationView : UserControl
             (o, v) => o = v);
 
     private ListBox _navigtorContent;
-
+    
+    private readonly IList<UserControl> _pagesitems = new List<UserControl>();
+    public IList<UserControl> PageItems =>_pagesitems;
     public ListBox NavigtorContent
     {
         get => _navigtorContent;
         set => SetAndRaise(NavigtorContentProperty, ref _navigtorContent, value);
     }
-
-    private readonly IList<UserControl> _pagesitems = new List<UserControl>();
-    public IList<UserControl> PageItems =>_pagesitems;
     
-    public NavigationView()
-    {
-        InitializeComponent();
-    }
-
     private int currentIndx = 0;
-    protected override void OnPropertyChanged(AvaloniaPropertyChangedEventArgs change)
-    {
-        base.OnPropertyChanged(change);
-        
-        if (change.Property.Name == nameof(NavigtorContent))
-        {
-            this.PART_Navigator.Content = NavigtorContent;
-
-            ((INavigationAdapter)NavigtorContent).ChangedSelectedIndex += (i =>
-            {
-                if (i < 0) return;
-                if (PART_Content == null) return;
-
-                ChangeContent(i);
-            });
-        }
-    }
     
     private void ChangeContent(int index)
     {
@@ -72,4 +49,25 @@ public partial class NavigationView : UserControl
     }
     
     public Action<Control?> VMChange { get; set; }
+
+    private ContentControl PART_Content;
+    private ContentControl PART_Navigator;
+
+    protected override void OnApplyTemplate(TemplateAppliedEventArgs e)
+    {
+        base.OnApplyTemplate(e);
+        
+        PART_Content = e.NameScope.Get<ContentControl>("PART_Content");
+        PART_Navigator = e.NameScope.Get<ContentControl>("PART_Navigator");
+        
+        this.PART_Navigator.Content = NavigtorContent;
+
+        ((INavigationAdapter)NavigtorContent).ChangedSelectedIndex += (i =>
+        {
+            if (i < 0) return;
+            if (PART_Content == null) return;
+
+            ChangeContent(i);
+        });
+    }
 }

@@ -1,6 +1,6 @@
 ﻿using ReactiveUI;
 
-namespace AvaloniaNavigationView.ViewModels;
+namespace AvaloniaNavigationView.ViewModel;
 
 public class NavigationViewModel : ReactiveObject
 {

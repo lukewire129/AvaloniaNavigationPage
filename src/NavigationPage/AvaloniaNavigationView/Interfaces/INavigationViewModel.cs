@@ -1,6 +1,6 @@
-using AvaloniaNavigationView.ViewModels;
+using AvaloniaNavigationView.ViewModel;
 
-namespace AvaloniaNavigationBar;
+namespace AvaloniaNavigationView;
 
 public interface INavigationViewModel
 {

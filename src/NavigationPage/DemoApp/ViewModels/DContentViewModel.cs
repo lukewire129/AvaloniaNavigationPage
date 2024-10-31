@@ -1,8 +1,8 @@
-using AvaloniaNavigationView.ViewModels;
+using AvaloniaNavigationView.ViewModel;
 
 namespace DemoApp.ViewModels;
 
-public class DContentViewModel : ViewModelBase
+public class DContentViewModel : NavigationViewModel
 {
     public string Title { get; } = "Facebook";
     public DContentViewModel()
