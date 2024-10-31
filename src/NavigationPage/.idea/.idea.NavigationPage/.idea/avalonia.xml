@@ -3,7 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
-        <entry key="../libs/repo/navigationbar/src/AvaloniaNavigationBar/Style/MagicBar.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
+        <entry key="../libs/repo/navigationbar/src/AvaloniaNavigationBar/Style/MagicBar.axaml" value="DemoApp.Desktop/DemoApp.Desktop.csproj" />
         <entry key="AvaloniaNavigationView/NavigationViee.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
         <entry key="AvaloniaNavigationView/NavigationView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
         <entry key="DemoApp/Views/AContentView.axaml" value="DemoApp.Browser/DemoApp.Browser.csproj" />
